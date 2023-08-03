@@ -179,7 +179,7 @@ if __name__ == "__main__":
    masks_output_dir  = "./PanNuke-master/masks/"
 
    generator.generate(input_images_dir, input_masks_dir, 
-   					  images_output_dir, masks_output_dir)
+   					  images_output_dir, masks_output_dir, mono_color_mask=True)
   
   except:
     traceback.print_exc()
