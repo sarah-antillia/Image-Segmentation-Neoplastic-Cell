@@ -301,11 +301,19 @@ inferred images)</a></b><br>
 <img src="./asset/test_output_merged.png" width="1024" height="auto"><br><br>
 
 <br>
-<!--
--->
-
-<br>
 
 <h3>
 References
 </h3>
+
+<b>1. PanNuke: An Open Pan-Cancer Histology Dataset for Nuclei Instance Segmentation and Classification</b><br>
+Gamper, Jevgenij and Koohbanani, Navid Alemi and Benet, Ksenija and Khuram, Ali and Rajpoot, Nasir<br>
+<pre>
+https://academictorrents.com/details/99f2c7b57b95500711e33f2ee4d14c9fd7c7366c
+</pre>
+
+<b>2. Cancer Instance Segmentation and Classification 1</b><br>
+<pre>
+https://www.kaggle.com/datasets/andrewmvd/cancer-inst-segmentation-and-classification
+</pre>
+
