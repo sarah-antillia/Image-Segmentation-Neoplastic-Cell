@@ -139,7 +139,7 @@ Please run the following command to create rotated, mirrored and flipped images 
 <h3>
 3.4 Split master dataset 
 </h3>
-Please run the following command to split master to test, train and valid dataset,<br>
+Please run the following command to split the augmented master into test, train and valid dataset,<br>
 <pre>
 >python split_master.py
 </pre>
