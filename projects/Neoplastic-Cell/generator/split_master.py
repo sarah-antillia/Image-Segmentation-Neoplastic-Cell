@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # split_master.py
-# 2023/08/02
+# 2023/08/04 
 
 """
 ./PanNuke-master
@@ -24,7 +24,7 @@
 # into test, train and valid dataset.
 
 """
-PanNuke
+./Neoplastic-Cells/
 ├─test
 │  ├─images
 │  └─masks
@@ -90,7 +90,7 @@ if __name__ == "__main__":
   try:
     images_dir = "./PanNuke-master/images/"
     masks_dir  = "./PanNuke-master/masks/"
-    output_dir = "./PanNuke/Neoplastic-Cells/"
+    output_dir = "./Neoplastic-Cells/"
     if os.path.exists(output_dir):
       shutil.rmtree(output_dir)
     if not os.path.exists(output_dir):

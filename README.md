@@ -124,14 +124,15 @@ in Image folder.<br>
 </pre>
 For simplicity, we will extract <b>Neoplastic cells</b> masks only from the masks.npy file.<br>
  
-Please run the following command to create  256x256 jpg image and mask dataset.<br>
+Please run Python script <a href="./projects/Neoplastic-Cell/generator/create_base.py">create_base.py</a> to create 256x256 jpg image and mask dataset.<br>
 <pre>
 >python create_base.py
 </pre>
 <h3>
 3.2 Create augmented master dataset
 </h3>
-Please run the following command to create rotated, mirrored and flipped images and masks from the jpg base dataset.<br>
+Please run Python script <a href="./projects/Neoplastic-Cell/generator/ImageMaskDatasetGenerator.py">
+ImageMaskDatasetGenerator.py</a> to create rotated, mirrored and flipped images and masks from the jpg base dataset.<br>
 <pre>
 >python ImageMaskDatasetGenerator.py
 </pre>
@@ -139,7 +140,9 @@ Please run the following command to create rotated, mirrored and flipped images 
 <h3>
 3.4 Split master dataset 
 </h3>
-Please run the following command to split the augmented master into test, train and valid dataset,<br>
+Please run Python script <a href="./projects/Neoplastic-Cell/generator/split_master.py">
+split_master.py</a>
+ to split the augmented master into test, train and valid dataset,<br>
 <pre>
 >python split_master.py
 </pre>
