@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+# 2023/08/04 to-arai solarsystem-laboratory.com
+
 import os
 import shutil
 import cv2
@@ -113,7 +115,7 @@ def create_masks(input_file, output_dir, channels=[0]):
             4: Epithelial, 
             6: Background)
         """     
-        channels = [0, 1, 2, 3, 4, 6]
+        #channels = [0, 1, 2, 3, 4]
         for i in channels:
           img = image[:, :, i]
           print("  mask shape {}".format(img.shape))
@@ -130,7 +132,6 @@ def create_masks(input_file, output_dir, channels=[0]):
 if __name__ == "__main__":
   try:
    
- 
    input_masks_file  = "./Masks/masks.npy"
    masks_output_dir  = "./PanNuke-Base/masks"
 
@@ -141,6 +142,8 @@ if __name__ == "__main__":
    #  0: Neoplastic cells, 
    # specify 
    #   channels = [0]
+   # If you need all non-background channels
+   #    channels = [0, 1, 2, 3, 4]
    create_masks(input_masks_file, masks_output_dir, channels = [0])
 
    input_images_file = "./Images/images.npy"
